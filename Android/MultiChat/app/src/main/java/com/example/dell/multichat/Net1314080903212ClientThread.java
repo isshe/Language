@@ -33,7 +33,7 @@ public class Net1314080903212ClientThread implements Runnable {
     {
         try {
             System.out.println("Socket before!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-            s = new Socket("192.168.240.22", 9402);
+            s = new Socket("10.0.0.2", 9402);
             System.out.println("Socket behind!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             br = new BufferedReader((new InputStreamReader(s.getInputStream())));
             os = s.getOutputStream();       //为什么br不是类似这样？
